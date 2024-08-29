@@ -13,7 +13,7 @@ class Solution(object):
 
         # 두번째 인덱스부터 반복해줌(prefix를 첫번째로 초기화했으므로)
         for string in strs[1:]:
-            # 두번째 인덱스부터 prefix가 0이 아닐때까지(나올떄까지) 반복
+            # 두번째 인덱스부터 prefix가 0이 아닐때까지(나올때까지) 반복
             while string.find(prefix) != 0:
                 # prefix(초기값 : 완전한 첫번째 문자)를 뒤에서 부터 한 문자씩 지움
                 prefix = prefix[:-1]
